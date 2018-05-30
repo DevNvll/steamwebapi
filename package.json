@@ -1,7 +1,7 @@
 {
   "name": "steamwebapi",
   "version": "1.2.0",
-  "main": "./dist/index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
     "test": "jest",
@@ -13,7 +13,6 @@
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
-    "jest": "^23.0.1",
-    "uglify-es": "^3.3.9"
+    "jest": "^23.0.1"
   }
 }
