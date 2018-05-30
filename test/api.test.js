@@ -93,3 +93,13 @@ it('getSchemaForGame()', async () => {
   const response = await api.getSchemaForGame(440)
   expect(response).toBeDefined()
 })
+
+it('getAppList()', async () => {
+  const response = await api.getAppList()
+  expect(response).toBeDefined()
+})
+
+it('getAppInfo()', async () => {
+  const response = await api.getAppInfo(440)
+  expect(response).toBeDefined()
+})
