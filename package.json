@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "prepublish": "uglifyjs lib/index.js -o dist/index.js -c"
+    "prepublish": "uglifyjs lib/index.js -o dist/index.js -c",
+    "postinstall": "uglifyjs lib/index.js -o dist/index.js -c"
   },
   "dependencies": {
     "append-query": "^2.0.1",
