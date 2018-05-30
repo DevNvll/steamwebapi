@@ -1,6 +1,6 @@
 const Steam = require('../lib')
 
-const api = new Steam('B56F659974F877B2485345FEFE27B7F8')
+const api = new Steam(process.env.STEAM_API_KEY)
 
 it('should resolve vanity', async () => {
   const response = await api.resolveId('cmdline')
