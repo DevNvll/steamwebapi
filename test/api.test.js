@@ -103,3 +103,8 @@ it('getAppInfo()', async () => {
   const response = await api.getAppInfo(440)
   expect(response).toBeDefined()
 })
+
+it('getUserLevel()', async () => {
+  const response = await api.getUserLevel('cmdline')
+  expect(response).toBeGreaterThan(41)
+})
