@@ -9,13 +9,13 @@ This is a simple and lightweight wrapper for the steam web api. Created because 
 ### Installation
 
 ```
-npm install https://github.com/DevNvll/steamwebapi.git
+npm install @razr9/steamwebapi
 ```
 
 or
 
 ```
-yarn add https://github.com/DevNvll/steamwebapi.git
+yarn add @razr9/steamwebapi
 ```
 
 ### Usage
