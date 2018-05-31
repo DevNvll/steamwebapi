@@ -1,5 +1,5 @@
 {
-  "name": "steamwebapi",
+  "name": "@razr9/steamwebapi",
   "version": "1.2.0",
   "main": "lib/index.js",
   "license": "MIT",
