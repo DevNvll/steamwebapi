@@ -108,3 +108,9 @@ it('getUserLevel()', async () => {
   const response = await api.getUserLevel('cmdline')
   expect(response).toBeGreaterThan(41)
 })
+
+it('getUserBadges()', async () => {
+  const response = await api.getUserBadges('cmdline')
+  expect(response).toBeDefined()
+  expect(response).toBeInstanceOf(Array)
+})
