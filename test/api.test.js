@@ -114,3 +114,8 @@ it('getUserBadges()', async () => {
   expect(response).toBeDefined()
   expect(response).toBeInstanceOf(Array)
 })
+
+it('getNumberOfCurrentPlayers()', async () => {
+  const response = await api.getNumberOfCurrentPlayers(440)
+  expect(response).toBeDefined()
+})

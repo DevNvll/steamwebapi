@@ -51,6 +51,7 @@ isPlayingSharedGame(id, appid)
 getSchemaForGame(appid)
 getAppList()
 getAppInfo(appid)
+getNumberOfCurrentPlayers(appid)
 ```
 
 More info: https://partner.steamgames.com/doc/webapi/
