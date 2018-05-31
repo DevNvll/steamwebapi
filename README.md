@@ -35,11 +35,11 @@ api.getPlayerSummary(id).then(data => {
 
 ```javascript
 resolveId(id) // resolves vanity url to steamID64
-getNewsForApp(appid, (count = 3), (maxLength = 300))
+getNewsForApp(appid[,count = 3, maxLength = 300])
 getGlobalAchievementPercentagesForApp(appid)
-getGlobalStatsForGame(appid, (count = 1), (achievements = []))
+getGlobalStatsForGame(appid[,count = 1, achievements = []])
 getPlayerSummary(id)
-getOwnedGames(id)
+getOwnedGames(id [,include_free_games=false, include_appinfo=false])
 getUserLevel(id)
 getUserBadges(id)
 getRecentlyPlayedGames(id)
@@ -53,7 +53,7 @@ getAppList()
 getAppInfo(appid)
 ```
 
-More info: https://developer.valvesoftware.com/wiki/Steam_Web_API
+More info: https://partner.steamgames.com/doc/webapi/
 
 ## License
 
