@@ -8,7 +8,8 @@ on:
     branches: [ main, develop ]
 
 jobs:
-  FTP-Deploy-Action:
+  build:
+    name: Develop
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,7 +22,6 @@ jobs:
       - name: Install modules
         run: npm ci
       - name: Check linting
-        run: npm run lint
       - name: Run tests
         run: npm run test
 
