@@ -195,7 +195,6 @@ it('getUserBadges()', async () => {
     expect(response).toBeDefined();
     expect(response.badges).toBeInstanceOf(Array);
     await api.getUserBadges('0').catch(async err => {
-        console.log(err);
         expect(err.message).toBe('Profile not found or private')
     });
 });
