@@ -248,7 +248,12 @@ export class Steam {
         });
     }
 
-    async isPlayingSharedGame(id: string, appid: number) {
+    /***
+     * Returns steamid of lender if sharing.
+     * @param id
+     * @param appid
+     */
+    async isPlayingSharedGame(id: string, appid: number): Promise<string> {
         return new Promise(async (resolve, reject) => {
             id = await this.resolveId(id).catch(reject) || '';
             if (!appid) {
