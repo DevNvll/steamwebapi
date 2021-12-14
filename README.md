@@ -1,5 +1,7 @@
 
+Main: [![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Pho3niX90/66e2656c1157700d2adcc8a9adef6929/raw/steamwebapi__heads_main.json)]
 
+Develop: [![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Pho3niX90/66e2656c1157700d2adcc8a9adef6929/raw/steamwebapi__heads_develop.json)]
 
 # steamwebapi
 
