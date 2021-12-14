@@ -1,16 +1,27 @@
 {
-  "name": "@razr9/steamwebapi",
+  "name": "@pho3nix90/steamwebapi",
   "version": "1.2.0",
-  "main": "lib/index.js",
+  "main": "lib/index.ts",
   "license": "MIT",
+  "allowSyntheticDefaultImports": true,
+  "compilerOptions": {
+    "module": "CommonJS"
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
-    "append-query": "^2.0.1",
-    "node-fetch": "^2.1.2"
+    "@babel/preset-typescript": "^7.16.0",
+    "append-query": "^2.1.1",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.6"
   },
   "devDependencies": {
-    "jest": "^27.4.5"
+    "@babel/preset-env": "^7.16.4",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "jest": "^27.4.4",
+    "ts-jest": "^27.1.1"
   }
 }
