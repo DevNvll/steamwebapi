@@ -1,6 +1,6 @@
-import {Steam} from '../lib';
+import {Steam} from '../src';
 import dotenv from 'dotenv';
-import {SteamPlayerBans} from '../lib/types/SteamPlayerBans';
+import {SteamPlayerBans} from '../src/types/SteamPlayerBans';
 
 if (process.env.NODE_ENV !== 'production') {
     dotenv.config();

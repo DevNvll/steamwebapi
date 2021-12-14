@@ -1,5 +1,5 @@
-import fetch from 'node-fetch';
-import appendQuery from 'append-query';
+const fetch = require('node-fetch');
+const appendQuery = require('append-query');
 import {SteamAppIdPlayers} from './types/SteamAppIdPlayers';
 import {SteamUserBadge} from './types/SteamUserBadge';
 import {SteamPlayerSummary} from './types/SteamPlayerSummary';
@@ -192,7 +192,7 @@ export class Steam {
                 .then(response => {
                     resolve(response.playerstats.stats)
                 })
-                .catch(err => {
+                .catch(() => {
                     reject(new Error('Profile not found or private'))
                 })
         })

@@ -73,6 +73,18 @@ jobs:
           color: green
           namedLogo: jest
 
+      - name: Automated Version Bump
+        uses: 'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          minor-wording: 'add,Adds,new'
+          major-wording: 'MAJOR'
+          patch-wording: 'patch,fixes,fix,fixed'
+          rc-wording: 'RELEASE,alpha'
+          default: prerelease
+          skip-tag: 'true'
+
       - name: Build Project
         run: |
           npm run build --if-present

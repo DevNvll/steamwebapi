@@ -1,7 +1,11 @@
 {
-  "name": "@pho3nix90/steamwebapi",
-  "version": "1.2.0",
-  "main": "lib/index.ts",
+  "name": "@pho3nix90/steamwebapi-ts",
+  "version": "1.3.0",
+  "description": "",
+  "repository": "https://github.com/Pho3niX90/steamwebapi",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "keywords": [],
   "license": "MIT",
   "allowSyntheticDefaultImports": true,
   "compilerOptions": {
@@ -9,7 +13,8 @@
   },
   "scripts": {
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "rollup -c"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.16.0",
@@ -21,7 +26,15 @@
     "@babel/preset-env": "^7.16.4",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
+    "@types/node-fetch": "^3.0.3",
     "jest": "^27.4.4",
-    "ts-jest": "^27.1.1"
-  }
+    "rollup": "^2.61.1",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "ts-jest": "^27.1.1",
+    "typescript": "^4.5.4"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ]
 }
