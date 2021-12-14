@@ -1,8 +1,3 @@
-
-Main: [![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Pho3niX90/66e2656c1157700d2adcc8a9adef6929/raw/steamwebapi__heads_main.json)]
-
-Develop: [![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Pho3niX90/66e2656c1157700d2adcc8a9adef6929/raw/steamwebapi__heads_develop.json)]
-
 # steamwebapi
 
 > A simplified wrapper for the steam web api
@@ -14,13 +9,13 @@ This is a simple and lightweight wrapper for the steam web api. Created because 
 ### Installation
 
 ```
-npm install @pho3nix90/steamwebapi
+npm install @razr9/steamwebapi
 ```
 
 or
 
 ```
-yarn add @pho3nix90/steamwebapi
+yarn add @razr9/steamwebapi
 ```
 
 ### Usage
