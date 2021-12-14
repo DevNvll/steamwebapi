@@ -1,3 +1,6 @@
+
+
+
 # steamwebapi
 
 > A simplified wrapper for the steam web api
@@ -9,13 +12,13 @@ This is a simple and lightweight wrapper for the steam web api. Created because 
 ### Installation
 
 ```
-npm install @razr9/steamwebapi
+npm install @pho3nix90/steamwebapi
 ```
 
 or
 
 ```
-yarn add @razr9/steamwebapi
+yarn add @pho3nix90/steamwebapi
 ```
 
 ### Usage
