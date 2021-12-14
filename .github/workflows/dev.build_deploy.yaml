@@ -23,6 +23,9 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test
+        env:
+          CI: true
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
 
       #- if: ${{ matrix.node-version == '16.x' }}
       - name: Get Coverage for badge
