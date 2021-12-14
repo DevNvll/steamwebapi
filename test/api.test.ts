@@ -13,7 +13,6 @@ const testData = {
     b: {vanityId: 'kingdomrust', steamId: '76561199044451528', name: 'KingdomRust.com'}
 }
 
-
 const testAppId = 252490;
 
 it('constructor test', async () => {
