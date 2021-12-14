@@ -21,7 +21,6 @@ jobs:
 
       - name: Install modules
         run: npm ci
-      - name: Check linting
       - name: Run tests
         run: npm run test
 
