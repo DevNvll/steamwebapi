@@ -58,15 +58,15 @@ jobs:
 
       #- if: ${{ matrix.node-version == '14.x' }}
       - name: Create the Badge
-          uses: schneegans/dynamic-badges-action@v1.0.0
-          with:
-          auth: ${{ secrets.GIST_SECRET }}
-          gistID: 66e2656c1157700d2adcc8a9adef6929
-          filename: steamwebapi__${{ env.BRANCH }}.json
-          label: Test Coverage
-          message: ${{ env.COVERAGE }}
-          color: green
-          namedLogo: jest
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+        auth: ${{ secrets.GIST_SECRET }}
+        gistID: 66e2656c1157700d2adcc8a9adef6929
+        filename: steamwebapi__${{ env.BRANCH }}.json
+        label: Test Coverage
+        message: ${{ env.COVERAGE }}
+        color: green
+        namedLogo: jest
 
       - name: Build Project
         run: |
